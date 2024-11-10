@@ -7,6 +7,7 @@
     :poster="previewImageLink"
     :controls="isControls"
     :title="title"
+    :autoplay="isAutoplay"
   >
     <source
       :src="link"
@@ -44,6 +45,10 @@ const props = defineProps({
     type: Boolean,
     default: true
   },
+  isAutoplay: {
+    type: Boolean,
+    default: false
+  }
 })
 
 const emit = defineEmits(['pause', 'test'])

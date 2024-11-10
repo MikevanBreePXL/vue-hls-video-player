@@ -5,6 +5,7 @@
     :progress="progress"
     :isMuted="isMuted"
     :isControls="isControls"
+    :isAutoplay="isAutoplay"
     @pause="pause"
   />
 </template>
@@ -35,6 +36,10 @@ defineProps({
     type: Boolean,
     default: true
   },
+  isAutoplay: {
+    type: Boolean,
+    default: false
+  }
 })
 
 function pause(currentTime) {

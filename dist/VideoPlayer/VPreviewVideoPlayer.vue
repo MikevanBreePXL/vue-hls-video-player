@@ -4,6 +4,7 @@
     :link="link"
     :isMuted="true"
     :isControls="false"
+    :isAutoplay="true"
     @mouseover="turnOn"
     @mouseleave="turnOff"
   />

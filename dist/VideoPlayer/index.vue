@@ -47,6 +47,10 @@ defineProps({
     type: Boolean,
     default: true
   },
+  isAutoplay: {
+    type: Boolean,
+    default: false
+  }
 })
 
 function pause(currentTime) {
