@@ -4,7 +4,7 @@
     :link="link"
     :isMuted="true"
     :isControls="false"
-    :isAutoplay="true"
+    :isAutoplay="isAutoplay"
     @mouseover="turnOn"
     @mouseleave="turnOff"
   />
@@ -22,6 +22,10 @@ defineProps({
     type: String,
     default: ''
   },
+  isAutoplay: {
+    type: Boolean,
+    default: false
+  }
 })
 
 function turnOn(e) {

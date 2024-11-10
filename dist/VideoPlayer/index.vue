@@ -7,12 +7,14 @@
     :progress="progress"
     :isMuted="isMuted"
     :isControls="isControls"
+    :isAutoplay="isAutoplay"
   />
 
   <VPreviewVideoPlayer
     v-else-if="type === 'preview'"
     :previewImageLink="previewImageLink"
     :link="link"
+    :isAutoplay="isAutoplay"
   />
 </template>
 
